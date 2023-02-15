@@ -1,20 +1,23 @@
-const indicator = {
+const indicators = {
   green: {
-    percent: 50,
+    percents: 50,
+    color: 'green',
     stateOfHelth: 'healthy',
   },
   yellow: {
-    percent: 15,
+    percents: 15,
+    color: 'yellow',
     stateOfHelth: 'wounded',
   },
   red: {
-    percent: 0,
+    percents: 0,
+    color: 'red',
     stateOfHelth: 'critical',
   },
 };
 
 export default function stateOfHelth(hero) {
-  if (hero.health > indicator.green.percent) { return indicator.green.stateOfHelth; }
-  if (hero.health >= indicator.yellow.percent) { return indicator.yellow.stateOfHelth; }
-  return indicator.red.stateOfHelth;
+  if (hero.health > indicators.green.percents) { return indicators.green.stateOfHelth; }
+  if (hero.health >= indicators.yellow.percents) { return indicators.yellow.stateOfHelth; }
+  return indicators.red.stateOfHelth;
 }
