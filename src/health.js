@@ -1,3 +1,5 @@
+// Чистые функции
+
 const indicators = {
   green: {
     percents: 50,
