@@ -1,5 +1,5 @@
 import orderByHealth from '../heroes.js';
-// Data-Driven ТЕСТЫ
+// Matchers-task ТЕСТЫ
 
 test('Sort array of heroes', () => {
   const heroes = [
